@@ -1,0 +1,91 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 1420px;
+    height: 60px;
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+    
+    .wrapper{
+        
+        display: flex;
+        justify-content: space-between;
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            .flag-item{
+                display: flex;
+            }
+
+            .nav-list{
+                display: flex;
+                gap:12px;
+                text-transform: uppercase;
+                a{
+                    text-decoration: none;
+                    color: var(--text-color);
+                    font-weight: 400;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .center{
+            cursor: pointer;
+            font-size: x-large;
+            a{
+            color: var(--text-color);
+            text-decoration: none;
+            }
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+                text-transform: uppercase;
+            a {
+                    text-decoration: none;
+                    color: var(--text-color);
+                    font-weight: 400;
+            
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+            .icon{
+                display: flex;
+                align-items: center;
+                gap:8px;
+                color: #5a5656;
+
+                .cart-icon{
+                    display: flex;
+                    position: relative;
+                    margin-right: 16px;
+                    span{
+                        position: absolute;
+                        top:-15px;
+                        right: -15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 20px;
+                        height: 20px;
+                        background-color: dodgerblue;
+                        padding-bottom: 2px;
+                        border-radius: 99px;
+                    }
+                }
+            }
+        }
+    }
+}
