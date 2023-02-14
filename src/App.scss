@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1420px;
-    padding:0 20px;
+    max-width: 1373px;
+    width: 1373px;
 
+    overflow: hidden;
+    @media (max-width: 1420px)  {
+        width: 1380px;
+    }
 }

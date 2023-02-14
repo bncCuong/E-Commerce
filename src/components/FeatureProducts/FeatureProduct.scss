@@ -1,0 +1,25 @@
+.featureProduct{
+    margin: 100px 100px;
+
+    .title{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap:200px;
+        margin-bottom: 100px;
+
+        h4{
+            font-size: 30px;
+        }
+        p{
+            flex: 3;
+            color: var(--text-second-color)
+        }
+    }
+
+    .product{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}

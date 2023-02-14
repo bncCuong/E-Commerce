@@ -6,9 +6,12 @@
     padding: 10px 0;
     background-color: #fff;
     border-bottom: 2px solid #000;
+    z-index: 99;
+    @media screen {
+        width: 1373px;
+    }
     
     .wrapper{
-        
         display: flex;
         justify-content: space-between;
         .left{
