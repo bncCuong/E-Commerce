@@ -18,17 +18,18 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
+      { path: '/' || '/home', element: <HomePage /> },
       { path: '/home', element: <HomePage /> },
-      { path: '/product/:id', element: <ProductPage /> },
-      { path: 'home/products/:id', element: <ProductsPage /> },]
+      { path: '/product/:id', element: <ProductPage />, },
+      { path: 'products/:id', element: <ProductsPage /> },]
   }
 ]);
 
 const App = () => {
   return (
-    <div>
+    <>
       <RouterProvider router={router} />
-    </div>
+    </>
   )
 }
 

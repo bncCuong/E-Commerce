@@ -19,7 +19,7 @@ const Slider = () => {
     }
     return (
         <div className='slider'>
-            <div className='wrapper' style={{ transform: `translateX(-${currentBanner * 110}vw)` }}>
+            <div className='wrapper' style={{ transform: `translateX(-${currentBanner * 100}vw)` }}>
                 <img src={dataBanner[0]} alt='banner1' className='banner' />
                 <img src={dataBanner[1]} alt='banner2' className='banner' />
                 <img src={dataBanner[2]} alt='banner3' className='banner' />

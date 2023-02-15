@@ -13,7 +13,7 @@ const Categories = () => {
             <div className='col-1'>
                 <div className='row-1'>
                     <img src={categories1} alt='categories' />
-                    <button>Sale</button>
+                    <Link to='/products/1'><button>Sale</button></Link>
                 </div>
                 <div className='row-1'>
                     <img src={categories2} alt="categories" />
@@ -23,29 +23,33 @@ const Categories = () => {
 
             <div className='col-2'>
                 <img src={categories3} />
-                <button>
-                    New Season
-                </button>
+                <Link to='/products/1'>
+                    <button>
+                        New Season
+                    </button>
+                </Link>
             </div>
 
             <div className='col-3'>
                 <div className='row-1'>
                     <div className='row-1-1'>
                         <img src={categories4} />
-                        <button>Men</button>
+                        <Link to='/products/1'><button>Men</button></Link>
                     </div>
 
                     <div className='row-1-1'>
                         <img src={categories5} />
-                        <button>Accessories</button>
+                        <Link to='/products/1'><button>Accessories</button></Link>
                     </div>
                 </div>
 
                 <div className='row-2'>
                     <img src={categories6} />
-                    <button>
-                        Shoes
-                    </button>
+                    <Link to='/products/1'>
+                        <button>
+                            Shoes
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

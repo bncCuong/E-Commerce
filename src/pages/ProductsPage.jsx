@@ -9,6 +9,7 @@ const ProductsPage = () => {
   const id = parseInt(useParams().id)
   const [filter, setFilter] = useState(0)
   const [sort, setSort] = useState(null)
+
   return (
     <div className='products'>
       <div className='prd-filter'>

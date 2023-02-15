@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Card.scss'
 
-const Card = ({ title, oldPrice, price, img, id, img2, isNew, cateId }) => {
+const Card = ({ title, oldPrice, price, img, id, img2, isNew }) => {
     return (
         <Link className='links' to={`/product/${id}`} >
             <div className='card'>

@@ -1,11 +1,21 @@
-
+import { useState } from 'react'
 import { KeyboardArrowDownIcon, SearchIcon, PersonOutlineIcon, FavoriteBorderIcon, ShoppingCartIcon } from '../../icon/icon'
 import { leftNavbar, rightNavbar } from '../../constants'
 import "./Navbar.scss"
 import flag from '../../assets/img/en.png'
 import { Link } from 'react-router-dom'
+import Modal from '../Modal/Modal'
 
 const Navbar = () => {
+  const [showCart, setShowCart] = useState(false)
+
+  const showCartHanler = () => {
+    setShowCart(true)
+  }
+
+  const hideCartHanler = () => {
+    setShowCart(false)
+  }
   return (
     <div className='navbar'>
       <div className='wrapper'>
@@ -34,10 +44,13 @@ const Navbar = () => {
             <SearchIcon />
             <PersonOutlineIcon />
             <FavoriteBorderIcon />
-            <div className='cart-icon'>
+
+            <div className='cart-icon' onClick={showCartHanler}>
               <ShoppingCartIcon />
               <span>0</span>
             </div>
+
+            {showCart && <Modal hideCart={hideCartHanler} showCart={showCartHanler} />}
           </div>
         </div>
       </div>

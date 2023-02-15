@@ -39,34 +39,16 @@ const data = [{
     isNew: false,
     oldPrice: 19,
     price: 12
-},
-{
-    id: 4,
-    img: product1,
-    img2: product2,
-    title: 'Long Sleeve Grapic T-shirt',
-    isNew: false,
-    oldPrice: 19,
-    price: 12
-},
-{
-    id: 4,
-    img: product1,
-    img2: product2,
-    title: 'Long Sleeve Grapic T-shirt',
-    isNew: false,
-    oldPrice: 19,
-    price: 12
 }]
 
 
 
 
-const List = () => {
+const List = ({ cateId }) => {
 
     return (
         <div className='list'>
-            {data.map(item => <Card item={item} key={item.id} title={item.title} img={item.img} img2={item.img2} id={item.id} />)}
+            {data.map(item => <Card item={item} key={item.id} title={item.title} img={item.img} img2={item.img2} id={cateId} />)}
         </div>
     )
 }

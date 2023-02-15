@@ -9,7 +9,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 
 export {KeyboardArrowDownIcon,KeyboardDoubleArrowRightIcon, 
     FacebookIcon, InstagramIcon, GoogleIcon, GitHubIcon,
-    KeyboardDoubleArrowLeftIcon,SearchIcon, PersonOutlineIcon, FavoriteBorderIcon, ShoppingCartIcon }
+    KeyboardDoubleArrowLeftIcon,SearchIcon, PersonOutlineIcon, FavoriteBorderIcon, ShoppingCartIcon, AddShoppingCartIcon, CompareArrowsIcon }

@@ -3,6 +3,7 @@ import Categories from '../components/Categories/Categories'
 import FeatureProduct from '../components/FeatureProducts/FeatureProduct'
 import Slider from '../components/Slider/Slider'
 import Contact from '../components/Contact/Contact'
+import Modal from '../components/Modal/Modal'
 
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
       <FeatureProduct title={'Trending Fashion'} />
 
       <Contact />
+
     </div>
   )
 }

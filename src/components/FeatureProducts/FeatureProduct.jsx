@@ -50,7 +50,7 @@ const FeatureProduct = (props) => {
             </div>
 
             <div className='product'>
-                {data.map(item => <Card key={item.id} isNew={item.isNew} title={item.title} oldPrice={item.oldPrice} price={item.price} img={item.img} img2={item.img2} />)}
+                {data.map(item => <Card key={item.id} isNew={item.isNew} title={item.title} oldPrice={item.oldPrice} price={item.price} img={item.img} img2={item.img2} id={item.id} />)}
             </div>
         </div>
     )
