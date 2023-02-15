@@ -2,12 +2,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top:50px ;
+    margin-top:100px ;
     padding: 0 20px;
-    .wrapper{
+
+    .footer_wrapper{
         display: flex;
         justify-content: space-between;
-        .categories, .links {
+        .footer_categories, .links {
             display: flex;
             
             flex-direction: column;

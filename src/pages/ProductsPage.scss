@@ -1,0 +1,65 @@
+.products{
+    width: 100%;
+    margin-top: 60px; 
+    display: flex;
+    .prd-filter{
+        position: sticky;    
+        top: 50px;
+        width: 300px;
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-top: 100px;    
+
+        h4{
+            margin-bottom: 20px;
+        }
+
+        .prd-categories{
+            display: flex;  
+            flex-direction: column;
+            
+            .cate-items{
+                display: flex;
+                gap: 10px;
+
+             .label{
+                width: 60px;
+             }
+            }
+        }
+
+        .filter-price{
+
+        }
+
+        .low-hight{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .prd-items{
+        flex: 1;
+
+        .prd-banner{
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            margin-bottom: 50px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .prd-lists{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

@@ -5,9 +5,9 @@ import { links, categories } from '../../constants'
 const Footer = () => {
   return (
     <div className='footer'>
-      <div className='wrapper'>
+      <div className='footer_wrapper'>
         {/* //Categories */}
-        <div className='categories'>
+        <div className='footer_categories'>
           <h4 className='title'>{categories.title}</h4>
           <div className='item'>
             {categories.item.map((item, index) => <Link to={'/home'} key={index}>{item}</Link>)}

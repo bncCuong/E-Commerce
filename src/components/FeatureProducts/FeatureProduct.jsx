@@ -3,7 +3,7 @@ import Card from '../Card/Card'
 
 import product1 from '../../assets/img/product1.jpg'
 import product2 from '../../assets/img/product2.jpg'
-const FeatureProduct = () => {
+const FeatureProduct = (props) => {
 
     const data = [{
         id: 1,
@@ -45,7 +45,7 @@ const FeatureProduct = () => {
     return (
         <div className='featureProduct'>
             <div className='title'>
-                <h4>Feature Products</h4>
+                <h4>{props.title}</h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet, qui quibusdam tempore nisi in aspernatur! Quibusdam quasi amet, totam, officia vero enim corrupti dolorem similique soluta nobis ex fuga!</p>
             </div>
 
