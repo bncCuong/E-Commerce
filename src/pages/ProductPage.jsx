@@ -1,15 +1,31 @@
+import { Link } from "react-router-dom"
+import { useState } from "react"
 import "./ProductPage.scss"
 import { AddShoppingCartIcon, FavoriteBorderIcon, CompareArrowsIcon } from "../icon/icon"
 import product1 from '../assets/img/product1.jpg'
 import product2 from '../assets/img/product2.jpg'
-import { Link } from "react-router-dom"
-import { useState } from "react"
+
+import { useDispatch } from "react-redux"
+import { cartActions } from "../redux/cartSlice"
+
+import { data } from '../constants/index'
+
 
 const ProductPage = () => {
   const [mainImg, setMainImg] = useState(product1)
+  const dispatch = useDispatch()
+
+  const addItemHanler = () => {
+    dispatch(cartActions.addItemToCart({
+      id: 1,
+      name: 'Long Sleeve Grapic T-shirt',
+      price: 20,
+      img: product1,
+    }))
+  }
   return (
     <div className='product'>
-
+      <img src={data[0].avatar} />
       <div className='leftBar'>
         <div className='firstImg' onClick={() => setMainImg(product1)} >
           <img src={product1} alt='product' />
@@ -45,11 +61,9 @@ const ProductPage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat quia perspiciatis aspernatur sapiente cum quaerat illo doloremque enim reiciendis beatae rerum nihil deserunt itaque, tempora est aperiam possimus nesciunt.
           </p>
 
-          <button className="product-btn">
-
+          <button className="product-btn" onClick={addItemHanler}>
             <AddShoppingCartIcon />
             Add to cart
-
           </button>
 
           <div className="product-add">

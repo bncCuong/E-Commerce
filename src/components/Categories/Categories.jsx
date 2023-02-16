@@ -6,8 +6,8 @@ import categories4 from '../../assets/img/categories4.jpeg'
 import categories5 from '../../assets/img/categories5.webp'
 import categories6 from '../../assets/img/categories6.jpg'
 import './Categories.scss'
-
 const Categories = () => {
+
     return (
         <div className='categories'>
             <div className='col-1'>

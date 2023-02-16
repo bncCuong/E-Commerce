@@ -5,9 +5,12 @@ import "./Navbar.scss"
 import flag from '../../assets/img/en.png'
 import { Link } from 'react-router-dom'
 import Modal from '../Modal/Modal'
-
+import { useSelector } from 'react-redux'
 const Navbar = () => {
   const [showCart, setShowCart] = useState(false)
+
+  const totalQuantity = useSelector(state => state.shoppingCart.totalQuantity)
+
 
   const showCartHanler = () => {
     setShowCart(true)
@@ -47,7 +50,7 @@ const Navbar = () => {
 
             <div className='cart-icon' onClick={showCartHanler}>
               <ShoppingCartIcon />
-              <span>0</span>
+              <span>{totalQuantity}</span>
             </div>
 
             {showCart && <Modal hideCart={hideCartHanler} showCart={showCartHanler} />}
