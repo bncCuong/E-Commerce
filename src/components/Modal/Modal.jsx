@@ -72,10 +72,10 @@ const CartModal = ({ hideCart }) => {
         <div className='cart-modal'>
             <h3 className='cart-title'>Product in your Cart</h3>
             <div className='cart-header'>
-                <span>Description</span>
+                <span className='header-des'>Description</span>
                 <span>Size</span>
-                <span>Quantity</span>
-                <span>Remove</span>
+                <span className='header-quantity'>Quantity</span>
+                <span className='header-remove'>Remove</span>
                 <span>Price</span>
             </div>
             <div className='cart-items'>
@@ -117,22 +117,53 @@ const CartModal = ({ hideCart }) => {
                 )}
             </div>
 
-            <div>
-                <span>SUBTOTAL</span>
-                <span>$20</span>
+            <div className='price-box'>
+                <div className='cart-box'>
+                    <span>Discount</span>
+                    <span>0.00</span>
+                </div>
+
+                <div className='cart-box'>
+                    <span>Delivery</span>
+                    <span>0.00</span>
+                </div>
+
+                <div className='cart-box'>
+                    <span>Subtotal</span>
+                    <span>0.00</span>
+                </div>
+
+                <div className='cart-box'>
+                    <span>Total</span>
+                    <span>0.00</span>
+                </div>
             </div>
 
-            <button>
-                Proceed to check out
-            </button>
+            <div className='cart-footer'>
+                <div className='code-footer'>
+                    <p>If you have a promotion code, please enter code here</p>
+                    <div className='input-wrap'>
+                        <input name='code' id='code' className='code-input' placeholder='Please enter code here' />
+                        <button className='code-btn'>
+                            Apply Discount
+                        </button>
+                    </div>
+                </div>
 
-            <button>
-                Reset Cart
-            </button>
+                <div className='footer-box'>
+                    <button className='checkout-btn'>
+                        Checkout
+                    </button>
+                    <button className='checkout-btn'>
+                        Remove all
+                    </button>
+                    <button onClick={hideCart} className='continue-btn'>
+                        Continue Shopping
+                    </button>
 
-            <button onClick={hideCart}>
-                Close
-            </button>
+                </div>
+            </div>
+
         </div>)
 }
 
