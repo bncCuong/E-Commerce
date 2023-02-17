@@ -6,6 +6,8 @@ import categories4 from '../../assets/img/categories4.jpeg'
 import categories5 from '../../assets/img/categories5.webp'
 import categories6 from '../../assets/img/categories6.jpg'
 import './Categories.scss'
+import { categoriesData } from '../../constants'
+
 const Categories = () => {
 
     return (
@@ -13,17 +15,17 @@ const Categories = () => {
             <div className='col-1'>
                 <div className='row-1'>
                     <img src={categories1} alt='categories' />
-                    <Link to='/products/1'><button>Sale</button></Link>
+                    <Link to='/products/Sale'><button>Sale</button></Link>
                 </div>
                 <div className='row-1'>
                     <img src={categories2} alt="categories" />
-                    <Link to='/products/1'><button>Women</button></Link>
+                    <Link to='/products/women'><button>Women</button></Link>
                 </div>
             </div>
 
             <div className='col-2'>
                 <img src={categories3} />
-                <Link to='/products/1'>
+                <Link to='/products/newseason'>
                     <button>
                         New Season
                     </button>
@@ -34,18 +36,18 @@ const Categories = () => {
                 <div className='row-1'>
                     <div className='row-1-1'>
                         <img src={categories4} />
-                        <Link to='/products/1'><button>Men</button></Link>
+                        <Link to='/products/men'><button>Men</button></Link>
                     </div>
 
                     <div className='row-1-1'>
                         <img src={categories5} />
-                        <Link to='/products/1'><button>Accessories</button></Link>
+                        <Link to='/products/accessories'><button>Accessories</button></Link>
                     </div>
                 </div>
 
                 <div className='row-2'>
                     <img src={categories6} />
-                    <Link to='/products/1'>
+                    <Link to='/products/shoes'>
                         <button>
                             Shoes
                         </button>

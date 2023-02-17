@@ -5,6 +5,8 @@ import List from '../components/List/List'
 import banner from '../assets/img/banner-product.jpg'
 import { useState } from 'react'
 
+
+
 const ProductsPage = () => {
   const id = parseInt(useParams().id)
   const [filter, setFilter] = useState(0)
@@ -12,6 +14,7 @@ const ProductsPage = () => {
 
   return (
     <div className='products'>
+      {/* //Left bar// */}
       <div className='prd-filter'>
         <div className='prd-categories'>
           <h4>Products categories</h4>
@@ -55,6 +58,8 @@ const ProductsPage = () => {
 
 
       </div>
+
+      {/* //Right Bar */}
       <div className='prd-items'>
         <div className='prd-banner'>
           <img src={banner} alt='banner' />

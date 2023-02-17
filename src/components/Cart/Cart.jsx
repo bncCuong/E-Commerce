@@ -2,12 +2,13 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { cartActions } from '../../redux/cartSlice'
 import './Cart.scss'
+
 const Cart = ({ hideCart }) => {
     const params = useParams()
 
     const dispatch = useDispatch()
-    const data = useSelector(state => state.shoppingCart.items)
 
+    const data = useSelector(state => state.shoppingCart.items)
 
     const addItemHanler = () => {
         dispatch(cartActions.addItemToCart({

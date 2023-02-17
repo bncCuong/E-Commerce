@@ -25,7 +25,6 @@ const ProductPage = () => {
   }
   return (
     <div className='product'>
-      <img src={data[0].avatar} />
       <div className='leftBar'>
         <div className='firstImg' onClick={() => setMainImg(product1)} >
           <img src={product1} alt='product' />
