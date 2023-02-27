@@ -8,7 +8,7 @@ import product2 from '../assets/img/product2.jpg'
 import { useDispatch } from "react-redux"
 import { cartActions } from "../redux/cartSlice"
 
-import { data } from '../constants/index'
+import { categoriesData } from '../constants/index'
 
 
 const ProductPage = () => {
